@@ -10,7 +10,7 @@ while(slaying) {
             console.log("Victory!");
             slaying = false;
         } else {
-            youHit = Math.floor(Math.random() * 2);
+            youHit = Math.floor(Math.random() * 4);
         }
     } else {
         console.log("You whiffed!");
