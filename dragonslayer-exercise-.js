@@ -13,7 +13,7 @@ while(slaying) {
             youHit = Math.floor(Math.random() * 2);
         }
     } else {
-        console.log("You missed!");
+        console.log("You whiffed!");
     }
     console.log("You suck!");
     slaying = false;
