@@ -15,6 +15,6 @@ while(slaying) {
     } else {
         console.log("You missed!");
     }
-    console.log("You lose!");
+    console.log("You suck!");
     slaying = false;
 }
