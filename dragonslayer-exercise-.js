@@ -7,20 +7,32 @@ while(slaying) {
         case "youHit":
             console.log("You win!");
             totalDamage += damageThisRound;
+            youHit = Math.floor(Math.random() * 4);
             break;
-    }
-    if (youHit) {
-        console.log("You win!");
-        totalDamage += damageThisRound;
-        if (totalDamage >= 4) {
+        case "totalDamage >= 4":
             console.log("Victory!");
             slaying = false;
-        } else {
-            youHit = Math.floor(Math.random() * 4);
-        }
-    } else {
-        console.log("You whiffed!");
+            break;
+        case "You whiffed":
+            console.log("You whiffed!");
+            break;
+        case "You suck!":
+            console.log("You suck!");
+            slaying = false;
+            break;
     }
-    console.log("You suck!");
-    slaying = false;
-}
+    //if (youHit) {//
+       // console.log("You win!");
+        //totalDamage += damageThisRound;
+        //if (totalDamage >= 4) {
+          ///  console.log("Victory!");
+            //slaying = false;
+        //} else {
+        //    youHit = Math.floor(Math.random() * 4);
+        //}
+   // } else {
+   //     console.log("You whiffed!");
+    //}
+    //console.log("You suck!");
+    //slaying = false;
+//}
